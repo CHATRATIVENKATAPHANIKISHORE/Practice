@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <!-- bean definitions here -->
+    <bean id="emp" class="com.pest.mypro.Employee">
+    <property name="empId" value="1"/>
+    <property name="empName" value="Seeta"/>
+    </bean>
+    <bean id="prod" class="com.pest.mypro.Product">
+    <property name="prodId" value="1"/>
+    <property name="prodName" value="Seeta"/>
+    <property name="price" value="21.0"/>
+    </bean>
+     <bean id="ord" class="com.pest.mypro.Order">
+    <property name="orderId" value="1"/>
+    <property name="orderDate" value="Seeta"/>
+    <property name="currentDate" value="sjj"/>
+    <property name="products" >
+    <list>
+		<value>Oil</value> 
+				<value>Grapes</value> 
+
+	</list>
+   </property>
+   
+    
+    </bean>
+    <bean id="prods" class="com.pest.mypro.Product">
+    <constructor-arg  value="1"/>
+    <constructor-arg  value="Seeta"/>
+    <constructor-arg value="21.0"/>
+    </bean>
+    
+ 
+</beans>

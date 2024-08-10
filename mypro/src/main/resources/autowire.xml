@@ -1,0 +1,13 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd
+	   					   http://www.springframework.org/schema/context
+	   					   http://www.springframework.org/schema/context/spring-context.xsd">
+	   					   <context:annotation-config />
+<bean id="Add" class="com.pest.mypro.Address"></bean>
+<bean id="per" class="com.pest.mypro.Person" autowire="byName"></bean>
+<bean id="hum" class="com.pest.mypro.Human" autowire="byName"></bean>
+	</beans>
